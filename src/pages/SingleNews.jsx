@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { FaEye, FaRegShareSquare, FaStar } from "react-icons/fa";
 import { IoBookmarksOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 
 const SingleNews = ({ singleNews }) => {
@@ -34,9 +35,9 @@ const SingleNews = ({ singleNews }) => {
             <p className="text-sm text-gray-600 my-4">
                 {details.slice(0, 450)}
             </p>
-            <a href="#" className="text-yellow-600 font-medium">
+            <Link to={`/news/${singleNews._id}`} className="text-yellow-600 font-medium">
                 Read More
-            </a>
+            </Link>
 
             <div className="flex items-center justify-between px-4 py-3 border-t">
                 <div className="flex items-center text-yellow-500">

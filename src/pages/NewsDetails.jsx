@@ -1,4 +1,4 @@
-import { Link, NavLink, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Header from "../Components/Header";
 import RightContainer from "../Components/layout-components/RightContainer";
 

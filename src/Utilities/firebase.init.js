@@ -8,13 +8,13 @@ import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAAXh3gK3WWnwtKnhZp4tWKZahF43lJ9aw",
-  authDomain: "dragon-news-auth-1f8c1.firebaseapp.com",
-  projectId: "dragon-news-auth-1f8c1",
-  storageBucket: "dragon-news-auth-1f8c1.firebasestorage.app",
-  messagingSenderId: "904887315069",
-  appId: "1:904887315069:web:eaf3ac4ddaceaac6ecdf14",
-  measurementId: "G-W64WKNQ658",
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
+  measurementId: import.meta.env.VITE_measurementId,
 };
 
 // Initialize Firebase
